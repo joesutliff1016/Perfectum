@@ -1,6 +1,7 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  min-width: 320px;
   max-width: 1920px;
 }
 header {
@@ -10,7 +11,6 @@ header {
 #mobile-background {
   max-width: 100%;
   height: auto;
-
 }
 #intro {
   width: 100%;
@@ -28,12 +28,15 @@ h1 {
   font-size: 2.5rem;
   padding-top: 5px;
 }
-#bar {
+h2,h3,h4 {
+  color: #333;
+}
+#poster {
   margin: -5px auto 0 auto;
   width: 90%;
   background-color: #fff;
 }
-#bar p {
+#poster p {
   font-family: 'Libre Franklin', sans-serif;
   font-family: 'Teko', sans-serif;
   font-size: .8rem;
@@ -44,6 +47,9 @@ h1 {
 nav {
   display: none;
 }
+nav a {
+  outline: none;
+}
 #urhere {
   border-bottom: 8px solid #eaca6c;
 }
@@ -52,19 +58,17 @@ nav {
 }
 
 #wrapper {
-  max-width: 85%;
+  width: 85%;
   margin: 0 auto;
-  opacity: .8;
 }
 .one {
   text-align: center;
-
 }
 h2 {
   width: 95%;
   margin: 0 auto;
   font-size: 6rem;
-  color: #000;
+  color: #333;
   font-family: 'Kaushan Script', cursive;
   padding-top: 25px;
   padding-right: 15px;
@@ -80,8 +84,10 @@ h2 {
 }
 .one p {
   margin-top: 15px;
-  font-size: 2.5rem;
-  font-family: 'Lora', serif;
+  font-size: 2.725rem;
+  font-family: 'Tinos', serif;
+  font-weight: normal;
+  color: #333;
 }
 .smaller-image {
   width: 85px;
@@ -89,12 +95,11 @@ h2 {
   padding-bottom: 100px;
 
 }
-#line {
+#line1 {
   width: 100%;
   height: 1%;
   margin: 0 auto;
-  border-top: 1px solid #acb3bf;
-  opacity: .4;
+  border-top: 1px solid #e6e5e6;
 }
 .two {
   font-family: 'Lora', serif;
@@ -105,13 +110,14 @@ h3 {
   font-size: 2rem;
   margin: 0;
   padding-top: 75px;
+  font-family: 'Tinos', serif;
+  font-weight: normal;
 }
-.line2 {
+.underline {
   width: 100px;
   height: 1%;
   margin: 15px auto;
-  border-top: 3px solid #acb3bf;
-  opacity: .5;
+  border-top: 3px solid #e6e5e6;
 
 }
 .two p {
@@ -125,42 +131,35 @@ button{
   width: 119px;
   height: 46px;
   background: #eeca6c;
-  font-family: 'Lora', serif;
+  font-family: 'Tinos', serif;
+  font-weight: normal;
   border: none;
   color: #fff;
   font-size: 1rem;
 }
 button:hover {
   background: #000;
+  cursor: pointer;
 }
-#line3 {
+#line2 {
   width: 100%;
   height: 1%;
   margin: 100px auto;
-  border-top: 1px solid #acb3bf;
-  opacity: .4;
-
+  border-top: 1px solid #e6e5e6;
 }
 .three {
   font-family: 'Lora', serif;
-  opacity: .8;
 
 }
 h4 {
   text-align: center;
   font-size: 2rem;
   margin: 0;
+  font-family: 'Tinos', serif;
+  font-weight: normal;
 }
 .menu:hover {
-  animation-name: price-animation;
-	animation-duration: 1s;
-	animation: price-animation 1s forwards;
-}
-@keyframes price-animation {
-	100% {
-		color: #dfaf37;
-	}
-
+  color: #dfaf37;
 }
 .menu-items {
   display: block;
@@ -169,19 +168,7 @@ h4 {
   height: 301px;
 }
 .menu-items:hover {
-  animation-name: image-animation;
-	animation-duration: 1s;
-	animation: image-animation 1s forwards;
   cursor: pointer;
-}
-@keyframes image-animation {
-	100% {
-		opacity: .8;
-	}
-  100% {
-    transform: scale(1.05);
-  }
-
 }
 .description {
   text-align: center;
@@ -191,12 +178,11 @@ h4 {
   text-align: center;
   font-size: 2.5rem;
 }
-#line4 {
-  width: 85%;
+#line3 {
+  width: 100%;
   height: 1%;
   margin: 50px auto 50px auto;
-  border-top: 1px solid #acb3bf;
-  opacity: .4;
+  border-top: 1px solid #e6e5e6;
 
 }
 small {
@@ -207,9 +193,6 @@ small {
   font-size: .65rem;
   color: #919499;
   text-align: center;
-
-
-
 }
 #icons {
   text-align: center;
@@ -224,7 +207,7 @@ small {
 }
 
 @media only screen and (min-width: 375px){
-  #bar {
+  #poster {
     width: 330px;
   }
 }
@@ -236,16 +219,15 @@ small {
 
 }
 @media only screen and (min-width: 575px){
-
   h1 {
     font-size: 4rem;
   }
-  #bar {
+  #poster {
     width: 542px;
     height: 66px;
 
   }
-  #bar p {
+  #poster p {
     padding-top: 25px;
     font-size: 1rem;
   }
@@ -256,11 +238,76 @@ small {
   .smaller-image {
     width: 132px;
     height: 132px;
+  }
+}
+@media screen and (min-width: 768px){
+  nav {
+    display: block;
+    border-bottom: 1px solid #acb3bf;
+    padding-top: 25px;
+    padding-bottom: 12px;
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  #nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:repeat(6, 2fr);
+    grid-template-rows:repeat(1, minmax(0px, auto));
+  }
+  /* The sticky class is added to the header with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+  }
+  .nav-one {
+    grid-column: 1/2;
+    height: 100%;
+    padding-bottom: 5px;
+  }
+  .nav-two {
+    grid-column: 2/3;
+    height: 100%;
+    padding-bottom: 5px;
+  }
+  .nav-three {
+    grid-column: 3/4;
+    height: 100%;
+    padding-bottom: 5px;
+  }
+  .nav-four {
+    grid-column: 4/5;
+    height: 100%;
+    padding-bottom: 5px;
+  }
+  .nav-five {
+    grid-column: 5/6;
+    height: 100%;
+    padding-bottom: 5px;
 
   }
+  .nav-six {
+    grid-column: 6/7;
+    height: 100%;
+    padding-bottom: 5px;
 
+  }
+   a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #000;
+    border-right: 1px solid #acb3bf;
+  }
+   .nav-six a{
+    border-right: none;
+  }
 }
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 900px){
   #menu-outer-div {
     width: 768px;
     margin: 0 auto;
@@ -297,75 +344,41 @@ small {
   #intro {
     top: 40%;
   }
-  nav {
-    display: block;
-    border-bottom: 1px solid #acb3bf;
-    opacity: .8;
-    padding-top: 25px;
-    padding-bottom: 12px;
-    font-family: 'Teko', sans-serif;
-    text-align: center;
-    font-size: 1.1rem;
+
+}
+
+@media only screen and (min-width: 1450px){
+  #mobile-background {
+    display: none;
   }
-  #nav-container {
+  header {
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  #menu-outer-div {
+    width: 1200px;
+  }
+  .menu-items {
+    width: 371px;
+    height: 413px;
+  }
+}
+@media screen and (min-width: 1500px){
+  #wrapper {
+    max-width: 1400px;
+  }
+  .one {
     width: 1000px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns:repeat(6, 2fr);
-    grid-template-rows:repeat(1, minmax(0px, auto));
-  }
-  .nav-one {
-    grid-column: 1/2;
-    height: 100%;
-    padding-bottom: 5px;
-
-
-  }
-  .nav-two {
-    grid-column: 2/3;
-    height: 100%;
-    padding-bottom: 5px;
-
-
-  }
-  .nav-three {
-    grid-column: 3/4;
-    height: 100%;
-    padding-bottom: 5px;
-
-
-  }
-  .nav-four {
-    grid-column: 4/5;
-    height: 100%;
-    padding-bottom: 5px;
-
-
-  }
-  .nav-five {
-    grid-column: 5/6;
-    height: 100%;
-    padding-bottom: 5px;
-
-  }
-  .nav-six {
-    grid-column: 6/7;
-    height: 100%;
-    padding-bottom: 5px;
-
-  }
-   a {
-    display: block;
-    width: 100%;
-    text-decoration: none;
-    color: #000;
-    border-right: 1px solid #acb3bf;
-  }
-   .nav-six a{
-    border-right: none;
-  }
-  #wrapper {
-    max-width: 1000px;
   }
   #larger-image {
     float: left;
@@ -380,56 +393,10 @@ small {
     float: left;
     margin-left: 8px;
   }
-  #line {
-    width: 100%;
+  #line1 {
     clear: both;
   }
   .two p {
     width: 1000px;
   }
-  #line3 {
-    width: 100%;
-  }
-  #menu-outer-div {
-    width: 1000px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns:repeat(6, 2fr);
-  	grid-template-rows:repeat(2, minmax(150px, auto));
-  }
-  .menu-items {
-    width: 300px;
-    height: 335px;
-  }
-  #line4 {
-    width: 1000px;
-  }
-}
-@media only screen and (min-width: 1200px){
-  #menu-outer-div {
-    width: 1200px;
-  }
-  .menu-items {
-    width: 371px;
-    height: 413px;
-  }
-}
-@media only screen and (min-width: 1450px){
-  #mobile-background {
-    display: none;
-  }
-  header {
-    background-image: url('images/background.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-  }
-  h1 {
-    font-size: 5rem;
-  }
-
 }

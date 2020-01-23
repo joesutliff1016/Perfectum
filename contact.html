@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="css/contact.css">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Tinos&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet" />
+  <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" />
+  <title>Contact</title>
+</head>
+<body>
+  <header>
+    <h1>perfectom</h1>
+    </header>
+    <div id="wrapper">
+      <div class="one">
+        <h2>CONTACT US</h2>
+        <div class="underline"></div>
+        <div id="map"></div>
+        <p id="address">1511 6th Ave,<br>Seattle, WA</p>
+        <p class="contact-info">Telephone: 206 223 0555</p>
+        <p class="contact-info">Fax: 206 223 0554</p>
+        <p class="contact-info">Email: <a href="">mail@demolink.org</a></p>
+      </div>
+      <div class="divider"></div>
+      <div class="two">
+        <h3>FEEDBACK</h3>
+        <div class="underline"></div>
+        <form action="#">
+          <input type="text" name="name" value="Your Name:">
+          <input type="text" name="phone" value="Telephone:">
+          <input type="text" name="email" value="Email:">
+          <textarea name="textbox" placeholder="Message:" rows="8" cols="80"></textarea>
+        </form>
+        <button type="submit" name="button">SUBMIT</button>
+      </div>
+      <div class="divider"></div>
+    </div>
+    <footer>
+      <small>
+        PERFECTUM &#169; 2019 PRIVACY POLICY / CREATED BY JOE, INSPIRED BY PERFECTUM
+      </small>
+      <div id="icons">
+      <i class="fab fa-google-plus"></i>
+      <i class="fab fa-pinterest"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-facebook"></i>
+      </div>
+    </footer>
+    <script>
+
+      function initMap() {
+        var options = {
+          zoom:15,
+          center:{lat:47.6062,lng:-122.3321}
+        }
+
+        var map = new
+        google.maps.Map(document.getElementById('map'), options);
+      }
+    </script>
+
+    <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvRO2Dz5xxM2z1Gx2f193RX5AvPOGwHC0&callback=initMap">
+</script>
+
+    </body>
+    </html>

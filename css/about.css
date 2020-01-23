@@ -1,0 +1,381 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1920px;
+  min-width: 320px;
+}
+header {
+  background-image: url('../images/background2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 40vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+h1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 2.5rem;
+}
+nav {
+  display: none;
+}
+nav a {
+  outline: none;
+}
+#urhere {
+  border-bottom: 8px solid #eaca6c;
+}
+ .hover:hover {
+  border-bottom: 8px solid #eaca6c;
+}
+
+#wrapper {
+  width: 85%;
+  margin: 0 auto;
+  font-family: 'Lora', serif;
+}
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+  padding-top: 75px;
+  color: #333;
+  font-family: 'Tinos', serif;
+  font-weight: normal;
+}
+.line2 {
+  width: 100px;
+  height: 1%;
+  margin: 15px auto;
+  border-top: 3px solid #e6e5e6;
+
+}
+.one img {
+  max-width: 100%;
+  display: block;
+  margin: 50px 0;
+}
+#bold {
+  line-height: 1.5em;
+  font-weight: bold;
+}
+#bold:hover {
+  color: #eeca6c;
+  cursor: pointer;
+}
+#regular {
+  line-height: 2em;
+  color: #919499;
+}
+#left {
+  line-height: 2em;
+  color: #919499;
+}
+button{
+  margin: 25px 0;
+  width: 119px;
+  height: 46px;
+  background: #eeca6c;
+  font-family: 'Tinos', serif;
+  font-weight: normal;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+}
+button:hover {
+  background: #000;
+  cursor: pointer;
+}
+.line3 {
+  width: 100%;
+  height: 1%;
+  margin: 100px auto;
+  border-top: 1px solid #e6e5e6;
+}
+h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+  color: #333;
+  font-family: 'Tinos', serif;
+  font-weight: normal;
+}
+#testimonials {
+  width: 100%;
+  margin: 50px auto;
+  font-family: 'Lora', serif;
+}
+.t {
+  margin: 25px 0;
+}
+.t-p {
+  padding: 25px;
+  border-radius: 4px;
+  text-align: center;
+  background: #e6e5e6;
+  color: #928e92;
+  line-height: 1.5rem;
+}
+.name {
+  width: 100%;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+#testimonials a {
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  color: #eeca6c;
+  text-align: center;
+}
+h4 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+  color: #333;
+  font-family: 'Tinos', serif;
+  font-weight: normal;
+}
+#choose_us {
+  width: 100%;
+  margin: 50px auto;
+  font-family: 'Lora', serif;
+}
+.c {
+  border: 1px solid #e6e5e6;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+.c-p {
+  padding: 15px;
+  text-align: center;
+  color: #928e92;
+  line-height: 1.5rem;
+}
+.three i {
+  width: 100%;
+  text-align: center;
+  color: #eeca6c;
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+
+h5 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+  color: #333;
+  font-family: 'Tinos', serif;
+  font-weight: normal;
+}
+#awards {
+  width: 100%;
+  margin: 50px auto;
+  font-family: 'Lora', serif;
+}
+.a {
+  margin-top: 20px;
+}
+.a-p {
+  padding: 15px;
+  text-align: center;
+  color: #928e92;
+  line-height: 1.5rem;
+}
+#awards i {
+  width: 100%;
+  text-align: center;
+  color: #eeca6c;
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+
+.five img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
+.five p {
+  width: 66.666%;
+  text-align: center;
+  margin: 10px auto;
+  line-height: 1.5rem;
+}
+.five span {
+  margin-top: 15px;
+}
+#staff {
+  width: 95%;
+  margin: 50px auto;
+  font-family: 'Lora', serif;
+
+}
+.s {
+  margin: 50px auto;
+}
+.staff-intro {
+  color: #919499;
+}
+small {
+  display: block;
+  width: 66.666%;
+  margin: 25px auto;
+  font-family: 'Lora', serif;
+  font-size: .65rem;
+  color: #919499;
+  text-align: center;
+}
+#icons {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+.fab {
+    letter-spacing: 1rem;
+    color: #59bdaa;
+    font-size: 2.5rem;
+}
+@media screen and (min-width: 575px){
+  h1 {
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 768px){
+  nav {
+    display: block;
+    border-bottom: 1px solid #acb3bf;
+    padding-top: 25px;
+    padding-bottom: 12px;
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  #nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:repeat(6, 2fr);
+    grid-template-rows:repeat(1, minmax(0px, auto));
+  }
+  /* The sticky class is added to the header with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+  }
+  .nav-one {
+    grid-column: 1/2;
+    height: 100%;
+    padding-bottom: 5px;
+  }
+  .nav-two {
+    grid-column: 2/3;
+    height: 100%;
+    padding-bottom: 5px;
+  }
+  .nav-three {
+    grid-column: 3/4;
+    height: 100%;
+    padding-bottom: 5px;
+  }
+  .nav-four {
+    grid-column: 4/5;
+    height: 100%;
+    padding-bottom: 5px;
+  }
+  .nav-five {
+    grid-column: 5/6;
+    height: 100%;
+    padding-bottom: 5px;
+
+  }
+  .nav-six {
+    grid-column: 6/7;
+    height: 100%;
+    padding-bottom: 5px;
+
+  }
+   nav a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #000;
+    border-right: 1px solid #acb3bf;
+  }
+   .nav-six a{
+    border-right: none;
+  }
+}
+@media only screen and (min-width: 1000px){
+  #intro {
+    top: 40%;
+  }
+
+}
+@media screen and (min-width: 1024px){
+  #staff {
+    display: flex;
+  }
+  .s {
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1275px){
+  .one img {
+    float: left;
+    padding-right: 25px;
+  }
+  #bold  {
+    margin-top: 100px;
+
+  }
+  #testimonials {
+    display: flex;
+    align-content: center;
+  }
+  .t {
+    margin: 25px;
+
+  }
+  #choose_us {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+  .c {
+    margin: 15px;
+    width: 40%;
+
+  }
+  #awards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .a {
+    margin: 15px;
+    width: 25%;
+
+  }
+}
+@media screen and (min-width: 1500px){
+  #wrapper {
+    width: 1200px;
+  }
+  #staff {
+    width: 85%;
+  }
+}
