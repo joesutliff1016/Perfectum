@@ -24,6 +24,30 @@ h1 {
   font-family: 'Kaushan Script', cursive;
   font-size: 2.5rem;
 }
+#mobile-nav {
+  display: block;
+  margin: 15px auto 0 auto;
+  font-size: 1.5rem;
+  width: 250px;
+}
+.nav-line {
+  width: 100%;
+  height: 1%;
+  margin: 15px auto;
+  border-top: 1px solid #e6e5e6;
+}
+nav {
+  display: none;
+}
+nav a {
+  outline: none;
+}
+#urhere {
+  border-bottom: 8px solid #eaca6c;
+}
+ .hover:hover {
+  border-bottom: 8px solid #eaca6c;
+}
 #wrapper {
   width: 85%;
   margin: 0 auto;
@@ -32,8 +56,8 @@ h1 {
 h2 {
   text-align: center;
   font-size: 2rem;
-  margin: 0;
   padding-top: 75px;
+  margin: 0;
   color: #333;
   font-family: 'Tinos', serif;
   font-weight: normal;
@@ -93,9 +117,10 @@ h4 {
   font-family: 'Tinos', serif;
   font-weight: normal;
 }
-.three img {
+.two img {
   display: block;
-  margin: 25px auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
   max-width: 100%;
 }
 .three .bold {
@@ -140,5 +165,107 @@ small {
 @media screen and (min-width: 575px){
   h1 {
     font-size: 4rem;
+  }
+}
+@media screen and (min-width: 768px){
+  #mobile-nav {
+    display: none;
+  }
+  .nav-line {
+    display: none;
+  }
+  nav {
+    display: block;
+    border-bottom: 1px solid #acb3bf;
+    padding-top: 25px;
+    padding-bottom: 12px;
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  #nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:repeat(6, 2fr);
+    grid-template-rows:repeat(1, minmax(0px, auto));
+  }
+  /* The sticky class is added to the header with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+  }
+  .nav-one {
+    grid-column: 1/2;
+    height: 100%;
+    padding-bottom: 5px;
+  }
+  .nav-two {
+    grid-column: 2/3;
+    height: 100%;
+    padding-bottom: 5px;
+  }
+  .nav-three {
+    grid-column: 3/4;
+    height: 100%;
+    padding-bottom: 5px;
+  }
+  .nav-four {
+    grid-column: 4/5;
+    height: 100%;
+    padding-bottom: 5px;
+  }
+  .nav-five {
+    grid-column: 5/6;
+    height: 100%;
+    padding-bottom: 5px;
+
+  }
+  .nav-six {
+    grid-column: 6/7;
+    height: 100%;
+    padding-bottom: 5px;
+
+  }
+   nav a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #000;
+    border-right: 1px solid #acb3bf;
+  }
+   .nav-six a{
+    border-right: none;
+  }
+  #wrapper {
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns:repeat(6, 2fr);
+    grid-template-rows:repeat(2, minmax(0px, auto));
+    grid-gap: 25px;
+  }
+  .one {
+    grid-column: 1/5;
+    grid-row: 1;
+  }
+  .two {
+    grid-column: 5/7;
+    grid-row: 1;
+  }
+  h3 {
+    padding-top: 50px;
+  }
+  h4 {
+    padding-top: 50px;
+  }
+  h5 {
+    padding-top: 50px;
+  }
+}
+@media screen and (min-width: 1200px){
+  .divider {
+    max-width: 1100px;
   }
 }

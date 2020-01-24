@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="css/contact.css">
   <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin|Teko&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Tinos&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet" />
   <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" />
@@ -15,20 +16,57 @@
   <header>
     <h1>perfectom</h1>
     </header>
+    <select name="form" onchange="location = this.value;" id="mobile-nav">
+      <option value="#">Navigate to...</option>
+      <option value="index.html">Home</option>
+      <option value="about.html">About</option>
+      <option value="news.html">News</option>
+      <option value="menu.html">Menu</option>
+      <option value="blog.html">Blog</option>
+      <option value="contact.html">Contact</option>
+    </select>
+    <div class="nav-line"></div>
+    <nav id="sticky-nav">
+        <div id="nav-container">
+
+            <div class="nav-one hover">
+                <a href="index.html">HOME</a>
+            </div>
+            <div class="nav-two hover">
+                <a href="about.html">ABOUT</a>
+            </div>
+            <div class="nav-three hover">
+                <a href="news.html">NEWS</a>
+            </div>
+            <div class="nav-four hover">
+                <a href="menu.html">MENU</a>
+            </div>
+            <div class="nav-five hover">
+                <a href="blog.html">BLOG</a>
+            </div>
+            <div class="nav-six hover" id="urhere">
+                <a href="contact.html">CONTACT</a>
+            </div>
+        </div>
+    </nav>
     <div id="wrapper">
       <div class="one">
         <h2>CONTACT US</h2>
         <div class="underline"></div>
         <div id="map"></div>
+      </div>
+      <div class="two">
         <p id="address">1511 6th Ave,<br>Seattle, WA</p>
         <p class="contact-info">Telephone: 206 223 0555</p>
         <p class="contact-info">Fax: 206 223 0554</p>
         <p class="contact-info">Email: <a href="">mail@demolink.org</a></p>
       </div>
-      <div class="divider"></div>
-      <div class="two">
+
+      <div class="three">
+        <div class="divider"></div>
         <h3>FEEDBACK</h3>
         <div class="underline"></div>
+        <div class="form-container">
         <form action="#">
           <input type="text" name="name" value="Your Name:">
           <input type="text" name="phone" value="Telephone:">
@@ -37,8 +75,9 @@
         </form>
         <button type="submit" name="button">SUBMIT</button>
       </div>
-      <div class="divider"></div>
+      </div>
     </div>
+    <div class="divider"></div>
     <footer>
       <small>
         PERFECTUM &#169; 2019 PRIVACY POLICY / CREATED BY JOE, INSPIRED BY PERFECTUM
@@ -66,6 +105,8 @@
     <script async defer
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvRO2Dz5xxM2z1Gx2f193RX5AvPOGwHC0&callback=initMap">
 </script>
+    <script type="text/javascript" src="my_js.js">
 
+    </script>
     </body>
     </html>

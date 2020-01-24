@@ -24,6 +24,18 @@ h1 {
   font-family: 'Kaushan Script', cursive;
   font-size: 2.5rem;
 }
+#mobile-nav {
+  display: block;
+  margin: 15px auto 0 auto;
+  font-size: 1.5rem;
+  width: 250px;
+}
+.nav-line {
+  width: 100%;
+  height: 1%;
+  margin: 15px auto;
+  border-top: 1px solid #e6e5e6;
+}
 nav {
   display: none;
 }
@@ -180,12 +192,13 @@ h5 {
     font-size: 4rem;
   }
 }
-@media screen and (min-width: 575px){
-  h1 {
-    font-size: 4rem;
-  }
-}
 @media screen and (min-width: 768px){
+  #mobile-nav {
+    display: none;
+  }
+  .nav-line {
+    display: none;
+  }
   nav {
     display: block;
     border-bottom: 1px solid #acb3bf;
