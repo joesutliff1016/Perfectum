@@ -9,16 +9,14 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 40vh;
+  height: 35vh;
   margin: 0;
   padding: 0;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 h1 {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
   font-family: 'Kaushan Script', cursive;
@@ -49,9 +47,12 @@ nav a {
   border-bottom: 8px solid #eaca6c;
 }
 #wrapper {
-  width: 85%;
+  max-width: 300px;
   margin: 0 auto;
   font-family: 'Lora', serif;
+}
+#wrapper p {
+  font-size: .9rem;
 }
 .one {
   padding-bottom: 50px;
@@ -72,7 +73,7 @@ h2 {
   border-top: 3px solid #e6e5e6;
 }
 #menu-intro {
-  background: #48aca1;
+  background: #55aa90;
   margin: 50px auto 0 auto;
 }
 #menu-intro p{
@@ -165,22 +166,27 @@ small {
     color: #59bdaa;
     font-size: 2.5rem;
 }
-@media screen and (min-width: 500px){
+@media screen and (min-width: 480px){
+  #wrapper{
+    max-width: 420px;
+  }
+  h1 {
+    font-size: 4rem;
+  }
   .flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
   }
   .flex-items {
-    margin: 15px;
-  }
-}
-@media screen and (min-width: 575px){
-  h1 {
-    font-size: 4rem;
+    margin-right: 15px;
   }
 }
 @media screen and (min-width: 768px){
+  header {
+    height: 25vh;
+  }
   #mobile-nav {
     display: none;
   }
@@ -253,11 +259,11 @@ small {
     border-right: none;
   }
   #wrapper {
-    max-width: 1100px;
+    max-width: 760px;
     display: grid;
     grid-template-columns:repeat(6, 2fr);
     grid-template-rows:repeat(3, minmax(0px, auto));
-    grid-gap: 25px;
+    grid-gap: 15px;
   }
   .one {
     grid-column: 1/5;
@@ -273,8 +279,21 @@ small {
   }
 
 }
+@media screen and (min-width: 980px){
+  #intro {
+    top: 40%;
+  }
+  #wrapper {
+    max-width: 1000px;
+  }
+}
 @media screen and (min-width: 1200px){
+  #wrapper {
+    width: 95%;
+    max-width: 1200px;
+  }
   #divider {
-    width: 1100px;
+    width: 95%;
+    max-width: 1200px;
   }
 }

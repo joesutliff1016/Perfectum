@@ -9,16 +9,14 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 40vh;
+  height: 35vh;
   margin: 0;
   padding: 0;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 h1 {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
   font-family: 'Kaushan Script', cursive;
@@ -50,7 +48,7 @@ nav a {
 }
 
 #wrapper {
-  width: 85%;
+  max-width: 300px;
   margin: 0 auto;
   font-family: 'Lora', serif;
 }
@@ -73,11 +71,12 @@ h2 {
 .one img {
   max-width: 100%;
   display: block;
-  margin: 50px 0;
+  margin: 50px auto;
 }
 #bold {
   line-height: 1.5em;
   font-weight: bold;
+  cursor: pointer;
 }
 #bold:hover {
   color: #eeca6c;
@@ -129,12 +128,11 @@ h3 {
   margin: 25px 0;
 }
 .t-p {
-  padding: 25px;
-  border-radius: 4px;
+  padding: 20px;
   text-align: center;
   background: #e6e5e6;
   color: #928e92;
-  line-height: 1.5rem;
+  line-height: 2;
 }
 .name {
   width: 100%;
@@ -258,12 +256,18 @@ small {
     color: #59bdaa;
     font-size: 2.5rem;
 }
-@media screen and (min-width: 575px){
+@media screen and (min-width: 480px){
+  #wrapper{
+    max-width: 420px;
+  }
   h1 {
     font-size: 4rem;
   }
 }
 @media screen and (min-width: 768px){
+  header {
+    height: 25vh;
+  }
   #mobile-nav {
     display: none;
   }
@@ -335,48 +339,30 @@ small {
    .nav-six a{
     border-right: none;
   }
-}
-@media only screen and (min-width: 1000px){
-  #intro {
-    top: 40%;
+  #wrapper {
+    max-width: 760px;
   }
-
-}
-@media screen and (min-width: 1024px){
-  #staff {
-    display: flex;
+  #wrapper p {
+    font-size: .9rem;
   }
-  .s {
-    margin: 15px;
-  }
-}
-@media screen and (min-width: 1275px){
   .one img {
-    float: left;
-    padding-right: 25px;
-  }
-  #bold  {
-    margin-top: 100px;
-
+    margin: 50px 0;
   }
   #testimonials {
     display: flex;
     align-content: center;
   }
   .t {
-    margin: 25px;
-
+    margin: 15px;
   }
   #choose_us {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
   }
   .c {
     margin: 15px;
     width: 40%;
-
   }
   #awards {
     display: flex;
@@ -385,15 +371,42 @@ small {
   }
   .a {
     margin: 15px;
-    width: 25%;
+    width: 27%;
 
   }
-}
-@media screen and (min-width: 1500px){
-  #wrapper {
-    width: 1200px;
+  .five p{
+    width: 100%;
   }
   #staff {
-    width: 85%;
+    display: flex;
+  }
+  .s {
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 980px){
+  #intro {
+    top: 40%;
+  }
+  #wrapper {
+    max-width: 972px;
+  }
+  .one img {
+    float: left;
+    padding-right: 25px;
+    margin-bottom: 0;
+  }
+  #bold  {
+    margin-top: 75px;
+  }
+
+}
+@media screen and (min-width: 1200px){
+  #wrapper {
+    width: 95%;
+    max-width: 1200px;
+  }
+  #staff {
+    width: 100%;
   }
 }

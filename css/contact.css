@@ -10,16 +10,14 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 40vh;
+  height: 35vh;
   margin: 0;
   padding: 0;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 h1 {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
   font-family: 'Kaushan Script', cursive;
@@ -50,7 +48,7 @@ nav a {
   border-bottom: 8px solid #eaca6c;
 }
 #wrapper {
-  width: 85%;
+  max-width: 300px;
   margin: 0 auto;
   font-family: 'Lora', serif;
 }
@@ -81,6 +79,7 @@ h2 {
 .contact-info {
   width: auto;
   color: #919499;
+  font-size: .9rem;
 }
 .contact-info a {
   color: #eeca6c;
@@ -147,12 +146,18 @@ small {
     color: #59bdaa;
     font-size: 2.5rem;
 }
-@media screen and (min-width: 575px){
+@media screen and (min-width: 480px){
+  #wrapper{
+    max-width: 420px;
+  }
   h1 {
     font-size: 4rem;
   }
 }
 @media screen and (min-width: 768px){
+  header {
+    height: 25vh;
+  }
   #mobile-nav {
     display: none;
   }
@@ -225,7 +230,7 @@ small {
     border-right: none;
   }
   #wrapper {
-    max-width: 1100px;
+    max-width: 760px;
     display: grid;
     grid-template-columns:repeat(6, 2fr);
     grid-template-rows:repeat(3, minmax(0px, auto));
@@ -252,6 +257,26 @@ small {
     width: 100%;
   }
   .divider {
-    max-width: 1100px;
+    max-width: 760px;
+  }
+}
+@media screen and (min-width: 980px){
+  #intro {
+    top: 40%;
+  }
+  #wrapper {
+    max-width: 980px;
+  }
+  .divider {
+    max-width: 980px;
+  }
+}
+@media screen and (min-width: 1200px){
+  #wrapper {
+    width: 95%;
+    max-width: 1200px;
+  }
+  .divider {
+    max-width: 1200px;
   }
 }

@@ -9,16 +9,14 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 40vh;
+  height: 35vh;
   margin: 0;
   padding: 0;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 h1 {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
   font-family: 'Kaushan Script', cursive;
@@ -49,9 +47,12 @@ nav a {
   border-bottom: 8px solid #eaca6c;
 }
 #wrapper {
-  width: 85%;
+  max-width: 300px;
   margin: 0 auto;
   font-family: 'Lora', serif;
+}
+#wrapper p {
+  font-size: .9rem;
 }
 h2 {
   text-align: center;
@@ -103,7 +104,7 @@ h2 {
   border-top: 1px solid #e6e5e6;
 }
 .regular-again {
-  line-height: 2em;
+  line-height: 2;
   color: #919499;
   border-bottom: 1px solid #e6e5e6;
 }
@@ -129,7 +130,8 @@ h3 {
 h4 {
   text-align: center;
   font-size: 2rem;
-  margin: 0;
+  margin-top: 50px;
+  margin-bottom: 0;
   color: #333;
   font-family: 'Tinos', serif;
   font-weight: normal;
@@ -148,6 +150,9 @@ small {
   display: block;
   margin: 50px 0 25px 0;
 }
+.five {
+  text-align: center;
+}
 h5 {
   text-align: center;
   font-size: 2rem;
@@ -157,8 +162,8 @@ h5 {
   font-weight: normal;
 }
 .video {
-  max-width: 370px;
   position: relative;
+
 }
 .five i {
   color: #fff;
@@ -174,7 +179,7 @@ h5 {
 .five img {
   max-width: 100%;
   display: block;
-  margin: 50px 0 25px 0;
+  margin: 50px auto 25px auto;
 }
 #icons {
   text-align: center;
@@ -187,12 +192,18 @@ h5 {
     color: #59bdaa;
     font-size: 2.5rem;
 }
-@media screen and (min-width: 575px){
+@media screen and (min-width: 480px){
+  #wrapper{
+    max-width: 420px;
+  }
   h1 {
     font-size: 4rem;
   }
 }
 @media screen and (min-width: 768px){
+  header {
+    height: 25vh;
+  }
   #mobile-nav {
     display: none;
   }
@@ -265,13 +276,11 @@ h5 {
     border-right: none;
   }
   #wrapper {
-    max-width: 1100px;
+    max-width: 760px;
     display: grid;
     grid-template-columns:repeat(6, 2fr);
     grid-template-rows:repeat(5, minmax(0px, auto));
-    grid-gap: 25px;
-
-
+    grid-gap: 15px;
   }
   .one {
     grid-column: 1/5;
@@ -291,6 +300,9 @@ h5 {
     grid-column: 1/5;
     grid-row: 2;
   }
+  .regular-again {
+    margin-right: 15px;
+  }
   .three {
     grid-column: 5/7;
     grid-row: 1;
@@ -298,9 +310,15 @@ h5 {
   h3 {
     padding-top: 25px;
   }
+  .three img {
+    max-width: 75%;
+  }
   .four {
     grid-column: 5/7;
     grid-row: 2;
+  }
+  .four img {
+    max-width: 75%;
   }
   .five {
     grid-column: 1/7;
@@ -321,5 +339,19 @@ h5 {
   }
   .five-row3 {
     grid-column: 5/7;
+  }
+}
+@media screen and (min-width: 980px){
+  #intro {
+    top: 40%;
+  }
+  #wrapper {
+    max-width: 1000px;
+  }
+}
+@media screen and (min-width: 1200px){
+  #wrapper {
+    width: 95%;
+    max-width: 1200px;
   }
 }
