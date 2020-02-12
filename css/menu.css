@@ -95,12 +95,12 @@ h2 {
   margin: 0 auto;
   text-align: center;
 }
-#menu-intro2 {
+.menu-intro2 {
   background: #eeca6c;
   margin: 15px auto 0 auto;
 
 }
-#menu-intro2 p{
+.menu-intro2 p{
   padding: 15px;
   color: #fff;
   text-align: center;
