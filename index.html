@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Libre+Franklin|Teko&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Tinos&display=swap" rel="stylesheet">
@@ -16,9 +17,8 @@
 
 <body>
 
-
     <header>
-        <img src="./images/background.jpg" id="mobile-background" alt=""/>
+        <img src="./images/background.jpg" id="mobile-background" alt="" />
         <div id="intro">
             <h1>perfectom</h1>
             <div id="banner">
@@ -27,13 +27,13 @@
         </div>
     </header>
     <select name="form" onchange="location = this.value;" id="mobile-nav">
-      <option value="#">Navigate to...</option>
-      <option value="#">Home</option>
-      <option value="about.html">About</option>
-      <option value="news.html">News</option>
-      <option value="menu.html">Menu</option>
-      <option value="blog.html">Blog</option>
-      <option value="contact.html">Contact</option>
+        <option value="#">Navigate to...</option>
+        <option value="#">Home</option>
+        <option value="about.html">About</option>
+        <option value="news.html">News</option>
+        <option value="menu.html">Menu</option>
+        <option value="blog.html">Blog</option>
+        <option value="contact.html">Contact</option>
     </select>
     <div class="nav-line"></div>
 
@@ -62,28 +62,26 @@
     </nav>
 
     <div id="wrapper">
-        <div class="one">
+        <div class="one wow zoomIn">
             <h2>enjoy</h2>
-            <img id="larger-image" src="./images/image1.jpg" alt="" />
-            <p id="hide">YOUR
-                <br />DELICIOUS
-                <br />VIRTUAL TOUR
-                <br />TO AMAZING!</p>
+                <img id="larger-image" src="./images/image1.jpg" alt="" />
+                <p id="hide">YOUR
+                    <br />DELICIOUS
+                    <br />VIRTUAL TOUR
+                    <br />TO AMAZING!</p>
 
                 <p id="show">YOUR
-                  <br />
-                    DELICIOUS
-                    VIRTUAL <br />TOUR
-                    TO AMAZING!</p>
-            <img class="smaller-image" src="./images/image2.jpg" alt=""/>
-            <img class="smaller-image" src="./images/image3.jpg" alt=""/>
-            <img class="smaller-image" src="./images/image4.jpg" alt="" />
+                    <br /> DELICIOUS VIRTUAL
+                    <br />TOUR TO AMAZING!</p>
 
+                <img class="smaller-image" src="./images/image2.jpg" alt="" />
+                <img class="smaller-image" src="./images/image3.jpg" alt="" />
+                <img class="smaller-image" src="./images/image4.jpg" alt="" />
         </div>
         <!-- end of one -->
         <div id="line1"></div>
 
-        <div class="two">
+        <div class="two wow zoomIn">
             <h3>WELCOME</h3>
             <div class="underline"></div>
             <p>
@@ -96,44 +94,56 @@
         </div>
         <!-- end of two -->
 
-        <div class="three">
+        <div class="three wow zoomIn">
             <h4>MENU</h4>
             <div class="underline"></div>
 
             <div id="menu-outer-div">
 
                 <div class="menu-one menu">
-                    <img class="menu-items" src="./images/menu1.jpg" alt="" />
+                    <div class="wow flipInX">
+                        <img class="menu-items" src="./images/menu1.jpg" alt="" />
+                    </div>
                     <p class="description">Lorem ipsum dolor sit amet, consectetur.</p>
                     <p class="price">$13.50</p>
                 </div>
 
                 <div class="menu-two menu">
-                    <img class="menu-items" src="./images/menu2.jpg" alt="" />
+                    <div class="wow flipInX">
+                        <img class="menu-items" src="./images/menu2.jpg" alt="" />
+                    </div>
                     <p class="description">Lorem ipsum dolor sit amet, consectetur.</p>
                     <p class="price">$24.95</p>
                 </div>
 
                 <div class="menu-three menu">
-                    <img class="menu-items" src="./images/menu3.jpg" alt="" />
+                    <div class="wow flipInX">
+                        <img class="menu-items" src="./images/menu3.jpg" alt="" />
+                    </div>
                     <p class="description">Lorem ipsum dolor sit amet, consectetur.</p>
                     <p class="price">$17.55</p>
                 </div>
 
                 <div class="menu-four menu">
-                    <img class="menu-items" src="./images/menu4.jpg" alt="" />
+                    <div class="wow flipInX">
+                        <img class="menu-items" src="./images/menu4.jpg" alt="" />
+                    </div>
                     <p class="description">Bulum iaculis lacinia est. Proin dictum</p>
                     <p class="price">$13.50</p>
                 </div>
 
                 <div class="menu-five menu">
-                    <img class="menu-items" src="./images/menu5.jpg" alt="" />
+                    <div class="wow flipInX">
+                        <img class="menu-items" src="./images/menu5.jpg" alt="" />
+                    </div>
                     <p class="description">Bulum iaculis lacinia est. Proin dictum</p>
                     <p class="price">$24.95</p>
                 </div>
 
                 <div class="menu-six menu">
-                    <img class="menu-items" src="./images/menu6.jpg" alt="" />
+                    <div class="wow flipInX">
+                        <img class="menu-items" src="./images/menu6.jpg" alt="" />
+                    </div>
                     <p class="description">Bulum iaculis lacinia est. Proin dictum</p>
                     <p class="price">$17.55</p>
                 </div>
@@ -156,6 +166,10 @@
         </div>
     </footer>
     <script src="js/my_js.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>

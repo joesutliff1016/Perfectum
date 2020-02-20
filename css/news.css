@@ -175,6 +175,8 @@ h5 {
 }
 .five i:hover {
   cursor: pointer;
+  color: #000;
+  opacity: .7;
 }
 .five img {
   max-width: 100%;
