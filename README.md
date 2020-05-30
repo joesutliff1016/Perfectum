@@ -8,4 +8,4 @@ Html, css, javascript.
 
 ## Contributors
 
-Joe Sutliff
+- Joe Sutliff
