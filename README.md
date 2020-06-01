@@ -4,7 +4,9 @@ A restaurant website based on a design seen on Pinterest: https://www.pinterest.
 
 ## Technologies used
 
-Html, Css and Javascript.
+- Html
+- Css
+- Javascript
 
 ## Contributors
 
